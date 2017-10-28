@@ -17,7 +17,7 @@ import (
 
 const ERR_ALPHA_DASH_DOT_SLASH = "AlphaDashDotSlashError"
 
-var AlphaDashDotSlashPattern = regexp.MustCompile("[^\\d\\w-_\\./]")
+var AlphaDashDotSlashPattern = regexp.MustCompile("[^\\d\\w-_:%/]")
 
 func init() {
 	binding.SetNameMapper(com.ToSnakeCase)
